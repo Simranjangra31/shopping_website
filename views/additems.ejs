@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-info">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <div class="alert alert-primary text-center fw-bolder" role="alert" style="font-size: 30px;">ADD PRODUCT DETAILS
+       
+            <ol class="breadcrumb" style="font-size: 16px;" >
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Additems</li>
+            </ol>
+          
+       </div></nav>
+    
+       <form action="/add" method="post" enctype="multipart/form-data">
+        <label for="formControlInput" class="form-label  mx-3 fw-bolder " style="font-size:medium">PRODUCT ID:</label>
+        <input type="text" class="form-control mx-3" name="id" id="formControlInput" style="width:80% ;box-shadow:0px 0px 0px 2px rgb(18, 19, 20);" placeholder="for eg.4512AVS">
+        <br>
+        <label for="formControlInput" class="form-label  mx-3 fw-bolder " style="font-size:medium">PRODUCT NAME:</label>
+        <input type="text" class="form-control  mx-3" name="nm" id="formControlInput" style=" width:80% ;box-shadow:0px 0px 0px 2px rgb(18, 19, 20);" placeholder="for eg. abc">
+        <br>
+        <label for="formControlInput" class="form-label  mx-3 fw-bolder " style="font-size:medium">PRODUCT PRICE:</label>
+        <input type="text" class="form-control  mx-3" name="price" id="formControlInput" style=" width:80% ;box-shadow:0px 0px 0px 2px rgb(18, 19, 20);" placeholder="for eg. abc">
+
+<br>
+<label for="formControlInput" class="form-label  mx-3 fw-bolder " style="font-size:medium">CATEGORY:</label>
+<select class="form-control mx-3" name="category"  style=" width:80% ;box-shadow:0px 0px 0px 2px rgb(18, 19, 20);">
+    <option selected disabled>Choose your category</option>
+    <option value="suit">suit</option>
+    <option value="party">party</option>
+    <option value="western">western</option>
+    <option value="lehanga">lehanga</option>
+    <option value="dupatta">dupatta</option>
+    <option value="saree">saree</option>
+  </select>
+<br>
+<label for="formControlInput" class="form-label  mx-3 fw-bolder " style="font-size:medium">PRODUCT IMAGE:</label>
+<input class="form-control mx-3"  type="file" id="formFile" name="image" style=" width:80% ;box-shadow:0px 0px 0px 2px rgb(18, 19, 20);">
+<br>
+<input type="submit" value="ADD" class="form-btn  fw-bolder" style=" width:10% ;box-shadow:0px 0px 0px 2px rgb(18, 19, 20); margin-left: 45%;">
+    </form>
+       
+</body>
+</html>
